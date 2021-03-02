@@ -17,13 +17,13 @@
 ### 3. Find the `mpi.h` file
 
 ```shell
-> find /usr/lib | grep mpi\.h
+> find /usr/lib | grep mpi\\.h
   /usr/lib/x86_64-linux-gnu/openmpi/include/mpi.h
 ```
 
 ### 4. Add the catalog to the `CMakeLists.txt` file
    
-```shell
+```txt
 cmake_minimum_required(VERSION 3.16)
 project(mpi_test C)
 
